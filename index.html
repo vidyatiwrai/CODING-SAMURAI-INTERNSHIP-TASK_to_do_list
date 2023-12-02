@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-3h6SEgn9qTpFQr3B0PkewzXp5WHEh/pqOjrC4Ri+5+3J2jRyQnUzbdWRPUCxHHUEq6SIfL54U9pqDBlztGge2I=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List Application</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>To-Do List Application</h1>
+
+    <div id="menu">
+        <button onclick="showAddTaskForm()">Add Task</button>
+        <button onclick="showMarkAsCompleteForm()">Mark Task as Complete</button>
+        <button onclick="viewTasks()">View Tasks</button>
+        <button onclick="showRemoveTaskForm()">Remove Task</button>
+        <button onclick="exitApplication()">Exit</button>
+    </div>
+
+    <div id="forms">
+        <div id="addTaskForm" style="display: none;">
+            <h2>Add Task</h2>
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" required>
+            <label for="dueDate">Due Date:</label>
+            <input type="text" id="dueDate" required>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div id="markAsCompleteForm" style="display: none;">
+            <h2>Mark Task as Complete</h2>
+            <label for="completeTaskIndex">Task Index:</label>
+            <input type="number" id="completeTaskIndex" required>
+            <button onclick="markTaskAsComplete()">Mark as Complete</button>
+        </div>
+
+        <div id="removeTaskForm" style="display: none;">
+            <h2>Remove Task</h2>
+            <label for="removeTaskIndex">Task Index:</label>
+            <input type="number" id="removeTaskIndex" required>
+            <button onclick="removeTask()">Remove Task</button>
+        </div>
+    </div>
+
+    <div id="tasks" style="display: none;">
+        <h2>Tasks</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

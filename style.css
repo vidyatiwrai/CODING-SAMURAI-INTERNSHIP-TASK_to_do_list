@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:darkmagenta;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#forms {
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+#forms input {
+    margin: 5px 0;
+}
+
+#tasks {
+    margin-top: 20px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    margin-bottom: 10px;
+}
